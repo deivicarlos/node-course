@@ -1,6 +1,7 @@
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { FormValues, Todo } from './types';
 import { useTodo } from './hooks/useTodo';
+import { Button } from '@/components/ui/button';
 
 type TodoCardProps = {
   todo: Todo;
@@ -69,6 +70,7 @@ const ZustandPage = () => {
         >
           Add Todo
         </button>
+        <Button>Click me</Button>
       </form>
       <div className="mt-4 flex flex-col gap-y-2 px-4">
         {todos.map((todo) => (

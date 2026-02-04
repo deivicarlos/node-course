@@ -1,6 +1,6 @@
-import 'styles/styles.css';
 import Header from './Header';
-import ZustandPage from 'pages/ZustandPage';
+import ZustandPage from '@/pages/ZustandPage';
+
 
 const App = () => {
   return (
