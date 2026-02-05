@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { planets } from "../../models/planets.model";
+import { getAllPlanets } from "../../models/planets.model";
 
-export const getAllPlanets = (_req: Request, resp: Response) => {
-  return resp.status(200).json(planets);
+export const htttGetAllPlanets = (_req: Request, resp: Response) => {
+  return resp.status(200).json(getAllPlanets());
 };

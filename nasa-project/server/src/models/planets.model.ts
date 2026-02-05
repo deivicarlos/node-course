@@ -50,4 +50,8 @@ export const loadPlanets = () => {
   );
 };
 
-export { habitablePlanets as planets };
+function getAllPlanets() {
+  return habitablePlanets;
+}
+
+export { getAllPlanets };
